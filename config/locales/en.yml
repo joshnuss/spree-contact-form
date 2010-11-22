@@ -7,3 +7,8 @@ en:
   topic: Topic
   invalid_order_number: "should start with letter 'R' followed by 9 numbers (e.g. R123123213)"
   contact_thank_you: "Thank you! Your message has been sent successfully, we will be contacting you shortly"
+  contact_topics: Contact Topics
+  contact_topics_description: Setup topics for the contact form, choose which email address topics should be routed to
+  emails: Emails
+  new_contact_topic: New Contact Topic
+  comma_delimited: comma delimited
