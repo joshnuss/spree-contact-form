@@ -6,7 +6,7 @@ class Message
   validates_presence_of :name, :message, :topic_id
 
   validates_format_of   :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i
-  validates_format_of   :order_number, :with => /(^$)|(^R\d{9}$)/i, :message => "should be in format R######### (i.e. R123123213)"
+  validates_format_of   :order_number, :with => /(^$)|(^R\d{9}$)/i, :message => I18n.t("invalid_order_number")
 
 
   def initialize(attributes={})
