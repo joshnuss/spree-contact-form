@@ -1,0 +1,22 @@
+Gem::Specification.new do |s|
+  s.platform    = Gem::Platform::RUBY
+  s.name        = 'spree_contact_form'
+  s.version     = '3.0.2'
+  s.summary     = 'Adds a contact form for your spree site'
+  s.description = 'Add a contact form for your spree website, you can setup topics and when the user submits the form, it is emailed to the site admin'
+  s.required_ruby_version = '>= 1.8.7'
+
+  s.author            = 'Josh Nussbaum'
+  s.email             = 'joshnuss@gmail.com'
+  s.homepage          = 'http://spreecommerce.com'
+  s.rubyforge_project = 'spree_contact_form'
+
+  s.files        = Dir['README.md', 'lib/**/*', 'app/**/*', 'config/*', 'db/*']
+  s.require_path = 'lib'
+  s.requirements << 'none'
+
+  s.has_rdoc = false
+
+  s.add_dependency('spree_core',  '>= 0.30.1')
+end
+
