@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_contact_form'
-  s.version     = '3.0.2'
+  s.version     = '3.0.3'
   s.summary     = 'Adds a contact form for your spree site'
   s.description = 'Add a contact form for your spree website, you can setup topics and when the user submits the form, it is emailed to the site admin'
   s.required_ruby_version = '>= 1.8.7'
@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.homepage          = 'http://spreecommerce.com'
   s.rubyforge_project = 'spree_contact_form'
 
-  s.files        = Dir['README.md', 'lib/**/*', 'app/**/*', 'config/*', 'db/*']
+  s.files        = Dir['README.md', 'lib/**/*', 'app/**/*', 'config/*', 'config/locales/*', 'db/*']
   s.require_path = 'lib'
   s.requirements << 'none'
 
