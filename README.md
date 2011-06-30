@@ -1,13 +1,28 @@
-ContactForm
-===========
+Spree Contact Form Extension
+=========
 
-Introduction goes here.
+An spree extension for contact forms.
 
+Installation
+============
 
-Example
-=======
+1) add the gem to your `Gemfile`:
 
-Example goes here.
+`gem 'spree_contact_form'`
 
+2) run bundler:
 
-Copyright (c) 2010 [name of extension creator], released under the New BSD License
+`bundle install`
+
+3) install it:
+
+`rails generate spree_contact_form:install`
+
+3) migrate your database:
+
+`rake db:migrate`
+
+Viewing Contact Form
+======================
+
+`http://yourdomain.tld/contact`
