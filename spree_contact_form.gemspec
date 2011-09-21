@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_contact_form'
-  s.version     = '3.0.4'
+  s.version     = '3.0.5'
   s.summary     = 'Adds a contact form for your spree site'
   s.description = 'Add a contact form for your spree website, you can setup topics and when the user submits the form, it is emailed to the site admin'
   s.required_ruby_version = '>= 1.8.7'
@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
 
   s.has_rdoc = false
 
-  s.add_dependency('spree_core',  '>= 0.30.1')
+  s.add_dependency('spree_core',  '>= 0.70.RC1')
 end
 
