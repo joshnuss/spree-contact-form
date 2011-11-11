@@ -8,3 +8,4 @@ spec/test_app
 Gemfile
 Gemfile.lock
 pkg
+.rvmrc
