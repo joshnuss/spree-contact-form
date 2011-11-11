@@ -4,14 +4,12 @@
 <div id="contact-us">
   <h1><%= t("contact_us") %></h1>
 
-  <%= hook :contact do %>
-
+  <div data-hook='contact'>
     <%= render "shared/error_messages", :target => @message %>
 
     <%= form_for(:message, :url => contact_path) do |f| %>
 
-      <%= hook :contact_inside_form do %>
-
+      <div data-hook="contact_inside_form">
         <p>
           <%= f.label :topic_id, t("subject") %><br />
           <%= f.collection_select :topic_id, @topics, :id, :name  %>  
@@ -38,11 +36,7 @@
         </p>
 
         <p><%= submit_tag t("send_message"), :class => 'button primary' %></p>
-      <% end %>
-
+      </div>
     <% end %>
-
-  <% end %>
-
+  </div>
 </div>
-

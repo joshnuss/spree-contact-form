@@ -2,7 +2,7 @@
 
 <%= render "shared/error_messages", :target => f.object %>
 
-<%= hook :admin_contact_topic_form, locals do %>
+<div data-hook="admin_contact_topic_form">
 
   <%= f.field_container :name do %>
     <%= f.label :name, t("name") %> <span class="required">*</span><br />
@@ -16,4 +16,4 @@
     <%= f.error_message_on :emails %>
   <% end %>
 
-<% end %>
+</div>

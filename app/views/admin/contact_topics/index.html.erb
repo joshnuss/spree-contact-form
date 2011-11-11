@@ -12,28 +12,21 @@
 <div id="new_contact_topic"></div>
 
 <table class="index">
-  <tr>
-    <%= hook :admin_contact_topic_index_headers do %>
-      <th><%= t("name") %></th>
-      <th><%= t("emails") %></th>
-    <% end %>
-    <th>
-      <%= hook :admin_contact_topic_index_header_actions %>
+  <tr data-hook='admin_contact_topic_index_headers'>
+    <th><%= t("name") %></th>
+    <th><%= t("emails") %></th>
+    <th data-hook='admin_contact_topic_index_header_actions'>
     </th>
   </tr>
   <% @contact_topics.each do |topic| %>
-    <tr id="<%= dom_id topic %>">
-      <%- locals = {:topic => topic} %>
-      <%= hook :admin_contact_topics_index_rows, locals do %>
-        <td><%= topic.name %></td>
-        <td><%= topic.emails %></td>
-      <% end %>
-      <td class="actions">
-        <%= hook :admin_contact_topics_index_row_actions, locals do %>
-          <%= link_to_edit topic  %>
-          &nbsp;
-          <%= link_to_delete topic  %>
-        <% end %>
+    <%- locals = {:topic => topic} %>
+    <tr id="<%= dom_id topic %>" data-hook="admin_contact_topics_index_rows">
+      <td><%= topic.name %></td>
+      <td><%= topic.emails %></td>
+      <td class="actions" data-hook="admin_contact_topic_index_header_actions">
+        <%= link_to_edit topic  %>
+        &nbsp;
+        <%= link_to_delete topic  %>
       </td>
     </tr>
   <% end %>
