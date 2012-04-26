@@ -1,6 +1,6 @@
 class CreateContactTopics < ActiveRecord::Migration
   def self.up
-    create_table :contact_topics do |t|
+    create_table :spree_contact_topics do |t|
       t.string :name
       t.string :emails
 
@@ -9,6 +9,6 @@ class CreateContactTopics < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :contact_topics
+    drop_table :spree_contact_topics
   end
 end

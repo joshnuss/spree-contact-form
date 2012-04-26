@@ -1,6 +1,6 @@
 class CreateMessages < ActiveRecord::Migration
   def self.up
-    create_table :messages do |t|
+    create_table :spree_messages do |t|
       t.belongs_to :topic
       t.string :name,  :null => false
       t.string :email,    :null => false
@@ -12,6 +12,6 @@ class CreateMessages < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :messages
+    drop_table :spree_messages
   end
 end

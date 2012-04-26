@@ -1,6 +1,6 @@
 <%- locals = {:f => f} %>
 
-<%= render "shared/error_messages", :target => f.object %>
+<%= render "spree/shared/error_messages", :target => f.object %>
 
 <div data-hook="admin_contact_topic_form">
 
@@ -12,7 +12,7 @@
 
   <%= f.field_container :emails do %>
     <%= f.label :emails, t("emails") %> (<%= t('comma_delimited') %>) <span class="required">*</span><br />
-    <%= f.text_field :emails, :class => 'fullwidth title'  %>  
+    <%= f.text_field :emails, :class => 'fullwidth title'  %>
     <%= f.error_message_on :emails %>
   <% end %>
 

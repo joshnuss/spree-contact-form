@@ -5,7 +5,8 @@
   <h1><%= t("contact_us") %></h1>
 
   <div data-hook='contact'>
-    <%= render "shared/error_messages", :target => @message %>
+    <%= render "spree/shared/error_messages", :target => @message %>
+		<br/>
 
     <%= form_for(:message, :url => contact_path) do |f| %>
 
@@ -26,7 +27,7 @@
         </p>
 
         <p>
-          <%= f.label :order_number, t("order_number") %> (<%= t('optional') %>)<br />
+          <%= f.label :order_number, t(:order_number) %> (<%= t('optional') %>)<br />
           <%= f.text_field :order_number  %>  
         </p>
 

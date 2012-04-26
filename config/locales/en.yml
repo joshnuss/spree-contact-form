@@ -1,9 +1,10 @@
 en:
-  contact_us: Contact Us 
+  contact_us: Contact us
   send_message: Send Message
   subject: Subject
   optional: optional
   message: Message
+  order_number: Order number (if you are contacting regarding an order)
   topic: Topic
   invalid_order_number: "should start with letter 'R' followed by 9 numbers (e.g. R123123213)"
   contact_thank_you: "Thank you! Your message has been sent successfully, we will be contacting you shortly"
