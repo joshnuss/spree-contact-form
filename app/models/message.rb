@@ -5,4 +5,6 @@ class Message < ActiveRecord::Base
   validates :order_number, :format => /(^$)|(^R\d{9}$)/i
   
   belongs_to :topic, :class_name => 'ContactTopic'
+
+  attr_accessible :topic_id, :name, :email, :order_number, :message
 end

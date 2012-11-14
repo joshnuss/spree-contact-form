@@ -44,6 +44,20 @@ describe Message do
     message.topic.should == topic
   end
 
+  context "protected attributes" do
+    it "doesnt assign operating system" do
+      create_message(:operating_system => 'Windows 3.1').operating_system.should be_nil
+    end
+
+    it "doesnt assign browser" do
+      create_message(:browser => 'Netscape Navigator 4.0').browser.should be_nil
+    end
+
+    it "doesnt assign ip address" do
+      create_message(:ip_address => '1.1.1.1').ip_address.should be_nil
+    end
+  end
+
   it "should be valid when all required fields provided" do
     message = create_message
     message.should be_valid
