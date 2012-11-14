@@ -45,12 +45,8 @@ describe Message do
   end
 
   context "protected attributes" do
-    it "doesnt assign operating system" do
-      create_message(:operating_system => 'Windows 3.1').operating_system.should be_nil
-    end
-
-    it "doesnt assign browser" do
-      create_message(:browser => 'Netscape Navigator 4.0').browser.should be_nil
+    it "doesnt assign user agent" do
+      create_message(:user_agent => 'Netscape Navigator 4.0').user_agent.should be_nil
     end
 
     it "doesnt assign ip address" do

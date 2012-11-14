@@ -42,6 +42,9 @@ describe ContactController do
     describe "when data is valid" do
       it "should send email" do
         message, mail = mock(:message, :save => true), mock(:mail)
+        
+        message.should_receive(:ip_address=).with('0.0.0.0')
+        message.should_receive(:user_agent=).with('Rails Testing')
         Message.should_receive(:new).with('message_params').and_return(message)
         ContactMailer.should_receive(:message_email).with(message).and_return(mail)
         mail.should_receive(:deliver)

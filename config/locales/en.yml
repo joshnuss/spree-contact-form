@@ -12,6 +12,5 @@ en:
   emails: Emails
   new_contact_topic: New Contact Topic
   comma_delimited: comma delimited
-  operating_system: OS
-  browser: Browser
+  user_agent: Browser/OS
   ip_address: IP

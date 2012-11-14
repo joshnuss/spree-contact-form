@@ -1,9 +1,8 @@
 <%= t(:name) %>:  <%= @message.name %>
 <%= t(:email) %>: <%= @message.email %>
 <%= t(:topic) %>: <%= @message.topic.name %>
-<%= t(:operating_system) %>: <%= @message.operating_system %>
-<%= t(:browser) %>: <%= @message.browser %>
 <%= t(:ip_address) %>: <%= @message.ip_address %>
+<%= t(:user_agent) %>: <%= @message.user_agent %>
 <% unless @message.order_number.blank? %> 
   <%= t('order') %>: <%= @message.order_number.upcase %> <%= "http://#{Spree::Config[:site_url]}/admin/orders/#{@message.order_number.upcase}"%>
 <% end %> 
